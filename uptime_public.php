@@ -10,6 +10,8 @@
 
         This script posts & updates your server uptime, boot time and last online time.
 
+        Implemented at https://t.me/PuzzaksServer
+
         AUTHOR:
 
         Puzzak, https://github.com/Puzzak/Telegram-Uptime-Monitor
