@@ -1,6 +1,8 @@
 # UptimeMonitor
 This script posts &amp; updates your server uptime, boot time and last online time in Telegram
 
+Implemented [here](https://t.me/PuzzaksServer).
+
 ## Setup
 
 You will need to give this script appropriate permissions (execute)
