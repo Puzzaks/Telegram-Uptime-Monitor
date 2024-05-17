@@ -1,4 +1,4 @@
-# UptimeMonitor
+# ![](header.png)
 This script posts &amp; updates your server uptime, boot time and last online time in Telegram
 
 Implemented [here](https://t.me/PuzzaksServer).
