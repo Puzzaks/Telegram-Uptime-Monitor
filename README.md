@@ -1,7 +1,7 @@
 # ![](header.png)
-This script posts &amp; updates your server uptime, boot time and last online time in Telegram
+#### PHP Script for posting uptime and boot time in Telegram for convenient monitoring
 
-Implemented [here](https://t.me/PuzzaksServer).
+You can see this script in action [here](https://t.me/PuzzaksServer), where it monitors my homebrew server.
 
 ## Setup
 #### Prerequisites
@@ -11,42 +11,16 @@ Implemented [here](https://t.me/PuzzaksServer).
  - Linux host for script to run from
 
 #### Steps
-1. Copy script to the server
-2. Edit script 
-You will need to give this script appropriate permissions (execute)
-And create files "lastup.txt" and "lastpost.txt" in the same folder
-Both files *must* contain `1` (just the number one) on the first launch
-Script should be able to write to them for this to work
-
-To automate script you can use these two rules for crontab:
+1. Copy `uptime_public.php` and both `lastup.txt` and `lastpost.txt` to the server
+2. Edit script to include chat id (line 56) and bot token (line 57)
+3. Add crontab rules for automation:
 ```
 @reboot php /path/to/script/uptime_public.php
  * * * * * php /path/to/script/uptime_public.php
 ```
-Be sure to supply 
+4. Initiate script either by rebooting the server or by executing `php uptime_public.php`
 
-## License
->This is free and unencumbered software released into the public domain.
-
->Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
-
->In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
-
->THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
->For more information, please refer to <https://unlicense.org>
+#### Why?
+I've made this script so I can see if I have electricity at home wherever I am and easier than from browser.
+I live in Ukraine, and my country suffers from blackouts caused by russian terroristic attacks on our social infrastructure.
+You can save lives and help civilans. Please, visit https://war.ukraine.ua/support-ukraine/ for more info.
