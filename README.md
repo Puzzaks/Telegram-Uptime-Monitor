@@ -4,11 +4,26 @@ This script posts &amp; updates your server uptime, boot time and last online ti
 Implemented [here](https://t.me/PuzzaksServer).
 
 ## Setup
+#### Prerequisites
+ - Telegram bot
+ - Channel or chat for updates
+ - Correct admin rights for bot in channel (publish & edit messages)
+ - Linux host for script to run from
 
+#### Steps
+1. Copy script to the server
+2. Edit script 
 You will need to give this script appropriate permissions (execute)
 And create files "lastup.txt" and "lastpost.txt" in the same folder
+Both files *must* contain `1` (just the number one) on the first launch
 Script should be able to write to them for this to work
 
+To automate script you can use these two rules for crontab:
+```
+@reboot php /path/to/script/uptime_public.php
+ * * * * * php /path/to/script/uptime_public.php
+```
+Be sure to supply 
 
 ## License
 >This is free and unencumbered software released into the public domain.
