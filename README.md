@@ -1,7 +1,7 @@
 # ![](header.png)
 #### PHP Script for posting uptime and boot time in Telegram for convenient monitoring
 
-You can see this script in action [here](https://t.me/PuzzaksServer), where it monitors my homebrew server.
+You can see this script in action [here](https://t.me/PuzzakServer), where it monitors my homebrew server.
 
 ## Setup
 #### Prerequisites
